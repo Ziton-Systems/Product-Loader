@@ -118,3 +118,9 @@ local clone = Frame:Clone()
 		end
 	end)
 end
+
+GUI.Session.TextButton.MouseButton1Click:Connect(function(Player:Player)
+	if WLS(Player) then
+		Soundpart:Stop()
+	end
+end)
